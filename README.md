@@ -10,23 +10,36 @@ Live sports events and 650+ TV channels for Stremio, powered by cdn-live.tv API.
 - 🕐 Live / Upcoming / Finished status badges
 - 📡 Multiple broadcast channels per event
 
-## Install in Stremio
+## One-Click Deploy (Free)
 
-Paste this URL in Stremio → Addons:
+### Option 1: Koyeb (Recommended — Free, No Credit Card)
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=buildpack&repository=github.com/Null9960/streamsports99-stremio&branch=master&name=streamsports99&ports=7000;http;/&env[PORT]=7000&env[NODE_ENV]=production)
+
+After deploy, your addon URL will be:
 ```
-https://YOUR-DEPLOYMENT-URL/manifest.json
+https://streamsports99-<YOUR_ORG>.koyeb.app/manifest.json
 ```
 
-## Deploy to Vercel (Recommended)
+### Option 2: Render (Free Tier)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Null9960/streamsports99-stremio)
+
+After deploy, your addon URL will be:
+```
+https://streamsports99-stremio.onrender.com/manifest.json
+```
+
+### Option 3: Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Null9960/streamsports99-stremio)
 
-Or manually:
+## Install in Stremio
 
-```bash
-npm i -g vercel
-vercel --prod
+After deploying, paste your addon URL in Stremio → Addons:
+
+```
+https://YOUR-DEPLOYMENT-URL/manifest.json
 ```
 
 ## Run Locally
@@ -48,6 +61,7 @@ npm start
 ├── handlers.js       # Catalog, Meta, Stream handlers
 ├── test.js           # 49 functional tests
 ├── vercel.json       # Vercel deployment config
+├── render.yaml       # Render.com blueprint
 └── package.json
 ```
 
