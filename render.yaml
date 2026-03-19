@@ -7,8 +7,9 @@ services:
     branch: master
     buildCommand: npm install
     startCommand: node index.js
+    healthCheckPath: /manifest.json
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 7000
+        value: 10000
