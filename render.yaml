@@ -1,0 +1,14 @@
+services:
+  - type: web
+    runtime: node
+    name: streamsports99-stremio
+    repo: https://github.com/Null9960/streamsports99-stremio
+    plan: free
+    branch: master
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 7000
