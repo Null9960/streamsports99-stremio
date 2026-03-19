@@ -1,0 +1,23 @@
+{
+  "name": "streamsports99-stremio",
+  "version": "1.0.0",
+  "description": "Stremio addon for live sports — Soccer, NBA, NFL, NHL, Tennis, Cricket & more via cdn-live.tv",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "node test.js",
+    "vercel-build": "echo 'No build step needed'"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["stremio", "addon", "sports", "live-tv", "streaming"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^2.7.0",
+    "stremio-addon-sdk": "^1.6.10"
+  }
+}
